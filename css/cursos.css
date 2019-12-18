@@ -1,0 +1,502 @@
+/* ESTILOS GERAIS */
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+.header {
+    background: #15161c;
+    padding: 30px 0;
+}
+
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header-container:before, .header-container:after {   /* Clearfix */
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.sonora-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 5px;
+    color: #edebeb;
+    float: left;
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul li {
+    list-style: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #d4d4d4;
+    font-size: 1em;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.menu ul li a:hover {
+    color: #fff;
+}
+
+/* RESPOSIVO HEADER */
+
+@media (max-width: 783px) {
+    .header {
+        text-align: center;
+        padding: 10px 5px;
+    }
+
+    .menu {
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+
+    .sonora-logo {
+        float: none;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .menu ul li {
+        padding-left: 0;
+    }
+
+    .menu ul li a {
+        display: block;
+        margin-top: 5px;
+        float: left;
+    }
+
+}
+
+/* CURSOS */
+
+.cursos {
+    background: url(../img/cursos-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.cursos-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cursos-container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 2em;
+    padding: 50px 0;
+}
+
+.cursos-container h1:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 0 auto;
+    background:#edebeb;
+}
+
+.cursos-conteudo-container {
+    max-width: 960px;
+    margin: 50px auto;
+}
+
+.cursos-conteudo-container:before, .cursos-conteudo-container:after {  /* Clearfix */
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.guitarra-curso {
+    float: left;
+}
+
+.guitarra-curso img {
+    width: 450px;
+    border: 1px solid #15161c;
+}
+
+.guitarra-curso-texto {
+    font-size: 1.3em;
+    line-height: 25px;
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+    
+}
+
+.guitarra-curso-texto h3 {
+    font-size: 2em;
+    margin: 30px 0;
+}
+
+.canto-curso {
+    float: left;
+}
+
+.canto-curso-texto {
+    font-size: 1.3em;
+    line-height: 25px;
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+}
+
+.canto-curso-texto h3 {
+    font-size: 2em;
+    margin: 30px 0;
+}
+
+.canto-curso img {
+    width: 450px;
+    border: 1px solid #15161c;
+}
+
+.piano-curso {
+    float: left;
+}
+
+.piano-curso img {
+    width: 450px;
+    border: 1px solid #15161c;
+}
+
+.piano-curso-texto {
+    font-size: 1.3em;
+    line-height: 25px;
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+    
+}
+
+.piano-curso-texto h3 {
+    font-size: 2em;
+    margin: 30px 0;
+}
+
+/* RESPONSIVO CURSOS */
+
+@media (min-width: 821px) and (max-width: 970px) {
+    .cursos-conteudo-container {
+        max-width: 470px;
+    }
+
+    .guitarra-curso-texto, .canto-curso-texto, .piano-curso-texto {
+        margin: 0;
+        width: 420px;
+        text-align: center;
+        
+    }
+}
+
+@media (min-width: 670px) and (max-width: 820px) {
+   .cursos-conteudo-container {
+       max-width: 470px;
+   }
+
+   .guitarra-curso-texto, .canto-curso-texto, .piano-curso-texto {
+        margin: 0;
+        width: 420px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:669px) {
+    .cursos-conteudo-container {
+        max-width: 300px;
+    }
+
+    .guitarra-curso-texto, .canto-curso-texto, .piano-curso-texto {
+        margin: 0;
+        width: 300px;
+        font-size: 1.1em;
+        text-align: center;
+        
+    }
+
+    .guitarra-curso img, .canto-curso img, .piano-curso img {
+        width: 300px;
+    }
+}
+
+
+/* FORMULÁRIO */
+
+.formulario {
+    background: #15161c;
+    padding: 10px 0;
+}
+
+.formulario-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.formulario-texto  {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #edebeb;
+    padding: 20px 0;
+}
+
+label {
+    color: #edebeb;
+    font-size: 1.1em;
+}
+
+
+form .formulario-dados label {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+}
+
+form .formulario-dados input {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    outline: none;
+}
+
+form .formulario-turno {
+    text-align: center;
+}
+
+.label-turno {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.label-cursos {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+}
+
+form select {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 25px;
+    outline: none;
+}
+
+form button {
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 30px;
+    outline: none;
+    background: none;
+    color: #d4d4d4;
+    border: 3px solid #d4d4d4;
+    border-radius: 5px;
+}
+
+form button:hover {
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+/* RESPONSIVO FORMULÁRIO  */
+
+@media (max-width:669px) {
+
+    .formulario-container {
+        max-width: 450px;
+    }
+
+    form .formulario-dados input, form select {
+        width: 50%;        
+    }
+
+    form button {
+        padding: 10px 60px;
+    }
+}
+
+
+/* CONTATO */
+
+.contato {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contato:before, .contato:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contato-info {
+    float: left;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.contato-info p {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #15161c;
+}
+
+.tel {
+    margin-top: 0 !important;
+}
+
+.contato-info h3:after {
+    content: '';
+    background: #15161c;
+    width: 50px;
+    height: 2px;
+    display: block;
+    margin: 5px 0;
+}
+
+.contato-info img {
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+img.insta {
+    width: 51px;
+}
+
+/* RESPONSIVO CONTATO */
+
+
+@media (min-width: 821px) and (max-width: 970px) {
+    .contato {
+        max-width: 470px;
+    }
+
+    .contato-info {
+        width: 470px;
+    }
+}
+
+
+@media (min-width: 670px) and (max-width: 820px) {
+    .contato {
+        max-width: 470px;
+    }
+
+    .contato-info {
+        width: 470px;
+    }
+
+
+}
+
+@media (max-width:669px) {
+    .contato {
+        max-width: 300px;
+    }
+
+    .contato-info {
+        width: 300px;
+    }
+
+}
+
+/* FOOTER */
+
+.footer {
+    background: #edebeb;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.footer-container p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer-container p a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVO FOOTER */
+
+@media (min-width: 821px) and (max-width: 970px) {
+    .footer-container {
+        max-width: 480px;
+    }
+
+    .footer-container p {
+        line-height: 20px;
+    }
+}
+
+
+@media (min-width: 670px) and (max-width: 820px) {
+    .footer-container {
+        max-width: 480px;
+    }
+
+    .footer-container p {
+        line-height: 20px;
+    }
+
+}
+
+@media (max-width:669px) {
+
+    .footer-container {
+        max-width: 300px;
+    }
+
+    .footer-container p {
+        line-height: 20px;
+    }
+}

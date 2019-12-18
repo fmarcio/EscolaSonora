@@ -1,0 +1,385 @@
+/* ESTILOS GERAIS */
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header {
+    background: #15161c;
+    padding: 30px 0;
+}
+
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header-container:before, .header-container:after {   /* Clearfix */
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.sonora-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 5px;
+    color: #edebeb;
+    float: left;
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul li {
+    list-style: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #d4d4d4;
+    font-size: 1em;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.menu ul li a:hover {
+    color: #fff;
+}
+
+/* RESPOSIVO HEADER */
+
+@media (max-width: 783px) {
+    .header {
+        text-align: center;
+        padding: 10px 5px;
+    }
+
+    .menu {
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+
+    .sonora-logo {
+        float: none;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .menu ul li {
+        padding-left: 0;
+    }
+
+    .menu ul li a {
+        display: block;
+        margin-top: 5px;
+        float: left;
+    }
+
+}
+
+/* SOBRE E APRESENTAÇÃO */
+
+.sobre {
+    background: url(../img/sobre-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.sobre-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sobre-container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 2em;
+    padding: 50px 0;
+}
+
+.sobre-container h1:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 0 auto;
+    background:#edebeb;
+}
+
+.apresentacao-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.apresentacao-texto h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    color: #15161c;
+    margin-top: 40px;
+}
+
+.apresentacao-texto p {
+    width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 35px;
+}
+
+.citacao {
+    text-align: center;
+}
+
+.citacao blockquote {
+    font-size: 1.2em;
+}
+
+.fotos-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.fotos-container:before, .fotos-container:after {   /* Clearfix */
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.fotos-sonora {
+    float: left;
+    margin: 40px 0;
+}
+
+.fotos-sonora img {
+    width: 450px;
+    margin: 0 15px;
+    border: 1px solid #15161c;
+}
+
+/* RESPONSIVO SOBRE E APRESENTAÇÃO */
+
+@media (min-width: 670px) and (max-width: 980px) {
+    .fotos-container {
+        max-width: 500px;
+    }
+
+    .fotos-sonora {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width:669px) {
+    .apresentacao-container {
+        max-width: 400px;
+    }
+
+    .apresentacao-texto h2 {
+        line-height: 40px;
+    }
+
+    .apresentacao-texto p {
+        width: 400px;
+        font-size: 1.1em;
+    }
+
+    .fotos-container {
+        max-width: 330px;
+    }
+
+    .fotos-sonora {
+        margin: 15px 0;
+    }
+
+    .fotos-sonora img {
+        width: 300px;
+    }
+}
+
+/* CALL PARA OS CURSOS */
+
+.call-cursos {
+    background: #15161c;
+    height: 128px;
+}
+
+.call-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.call-info {
+    text-align: center;
+}
+
+.call-info p {
+    color: #edebeb;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-cursos {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 30px;
+    color: #d4d4d4;
+    border: 3px solid #d4d4d4;
+    border-radius: 5px;
+}
+
+.btn-cursos:hover {
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+/* RESPONSIVO CALL PARA OS CURSOS */
+
+@media (max-width: 669px) { 
+
+    .btn-cursos {
+     padding: 10px 60px;
+    }
+
+}
+
+/* CONTATO */
+
+.contato {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contato:before, .contato:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contato-info {
+    float: left;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.contato-info p {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #15161c;
+}
+
+.tel {
+    margin-top: 0 !important;
+}
+
+.contato-info h3:after {
+    content: '';
+    background: #15161c;
+    width: 50px;
+    height: 2px;
+    display: block;
+    margin: 5px 0;
+}
+
+.contato-info img {
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+img.insta {
+    width: 51px;
+}
+
+/* RESPONSIVO CONTATO */
+
+@media (min-width: 670px) and (max-width: 980px) {
+    .contato {
+        max-width: 700px;
+    }
+
+    .contato-info {
+        width: 200px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 669px) {
+    .contato {
+        max-width: 300px;
+    }
+
+    .contato-info {
+        width: 300px;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background: #edebeb;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.footer-container p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer-container p a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVO FOOTER */
+
+@media (min-width: 670px) and (max-width: 980px) {
+    .footer-container {
+        max-width: 700px;
+    }
+
+}
+
+@media (max-width: 669px) {
+    .footer-container {
+        max-width: 300px;
+    }
+
+    .footer-container p {
+        line-height: 20px;
+    }
+}
