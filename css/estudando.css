@@ -111,6 +111,7 @@ body {
     background: url(../img/intro5.jpg) no-repeat;
     text-align: center;
     padding: 60px;
+    background-size: cover;
 }
 
 main div h1 {
