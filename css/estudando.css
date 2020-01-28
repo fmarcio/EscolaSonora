@@ -108,9 +108,10 @@ body {
 /* INTRODUÇÃO */
 
 .intro {
-    background: url(../img/intro5.jpg) no-repeat;
+    background: url(../img/intro5.jpg) no-repeat center;
+    background-size: cover;
     text-align: center;
-    padding: 60px;
+    padding: 60px 30px;
 }
 
 main div h1 {
@@ -153,6 +154,31 @@ main div p {
 
 /* RESPOSIVO INTRODUÇÃO */
 
+/* smartphones */
+
+@media (max-width: 414px) {
+    .intro h1 {
+        font-size: 1.5em;
+        max-width: 280px;
+    }
+
+    .intro p {
+        max-width: 280px;
+        font-size: .8em;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .intro .btn {
+        max-width: 250px;
+        display: inline-block;
+        padding: 10px 20px;
+    }
+}
+
+
+/* Breakpoint para telas medianas */
 
 @media (min-width: 670px) and (max-width: 980px) {
     .intro {
@@ -166,6 +192,16 @@ main div p {
     .intro h1 {
         width: 600px;
         margin: 0 auto;   
+    }
+}
+
+/* Breakpoint que costumo usar para telas menores */
+
+@media (max-width: 300px) {
+    .intro {
+        padding: 30px 0;
+        background: url(../img/intro5-small.jpg) no-repeat center center;
+        background-size: cover;
     }
 }
 
@@ -280,13 +316,39 @@ main div p {
 
 /* RESPONSIVO AULAS */
 
-@media (min-width: 981px) {
+/* smartphones */
+
+@media (max-width: 414px) {
     
-    .aulas {
-        max-width: 900px;
+    section.aulas {
+        max-width: 250px;
     }
 
+    div.aulas-item {
+        width: 250px;
+    }
+
+    div.aulas-item img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .call-aulas .btn-aulas {
+        max-width: 250px;
+        display: inline-block;
+        padding: 10px 25px;
+    }
+
+    .call-aulas p {
+        width: 200px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
 }
+
+/* Breakpoint para telas medianas */
 
 @media (min-width: 670px) and (max-width: 980px) {
 
@@ -305,6 +367,8 @@ main div p {
     }
 
 }
+
+/* Breakpoint que costumo usar para telas menores */
 
 @media (max-width:669px) {    
     
@@ -333,6 +397,16 @@ main div p {
         font-size: 1.2em;
         letter-spacing: 1px; 
     }
+}
+
+/* Telas maiores */
+
+@media (min-width: 981px) {
+    
+    .aulas {
+        max-width: 900px;
+    }
+
 }
 
 
@@ -388,6 +462,28 @@ main div p {
 
 /* RESPONSIVO ESTRUTURA */
 
+/* smartphones */
+
+@media (max-width: 414px) {
+
+    .estrutura-item {
+        width: 200px;
+        margin: 30px auto;
+    }
+
+    .estrutura-info h2 {
+        font-size: 1em;
+    }
+
+    .estrutura-info p {
+        font-size: .7em;
+        width: 200px;
+    }
+
+    .estrutura-info img {
+        width: 100px;
+    }
+}
 
 @media (min-width: 670px) and (max-width: 970px) {
     .estrutura-container {
@@ -488,6 +584,30 @@ img.insta {
 
 /* RESPONSIVO CONTATO */
 
+/* smartphones */
+
+@media (max-width: 414px) {
+
+   section.contato {
+       max-width: 200px;
+   }
+   
+    div.contato-info {
+       width: 200px;
+   }
+ 
+    .contato-info p {
+        width: 150px;
+        font-size: 1em;
+        display: inline-block;
+    }
+
+    .contato-info img {
+        width: 40px;
+    }
+}
+
+
 @media (min-width: 821px) and (max-width: 970px) {
     .contato {
         max-width: 470px;
@@ -496,6 +616,7 @@ img.insta {
     .contato-info {
         width: 470px;
     }
+    
 }
 
 
@@ -532,6 +653,7 @@ img.insta {
 .footer-container p {
     padding: 10px 0;
     font-size: 12px;
+    text-align: center;
 }
 
 .footer-container p a {
@@ -546,6 +668,19 @@ img.insta {
 
 
 /* RESPONSIVO FOOTER */
+
+/* smartphones */
+
+@media (max-width: 414px) {
+
+    div.footer-container{
+        max-width: 200px;
+    }
+    .footer-container p {
+        max-width: 200px;
+        text-align: center;
+    }
+}
 
 @media (min-width: 821px) and (max-width: 970px) {
     .footer-container {

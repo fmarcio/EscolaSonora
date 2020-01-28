@@ -192,12 +192,36 @@ body {
 
 /* RESPONSIVO ESTRUTURA */
 
+/* smartphone */
+
+@media (max-width: 414px) {
+
+    div.estrutura-texto h2 {
+        font-size: 1.2em;
+    }
+
+    div.estrutura-texto p {
+        max-width: 250px;
+    }
+
+    section.estr-fotos-container {
+        max-width: 280px;
+    }
+
+    div.estrutura-fotos img {
+        max-width: 250px;
+    }
+
+    div.estrutura-fotos h3, div.estrutura-fotos p {
+        max-width: 250px;
+    }
+}
+
 @media (min-width: 821px) and (max-width: 970px) {
 
     .estr-fotos-container {
         max-width: 470px;
     }
-
 }
 
 
@@ -209,8 +233,6 @@ body {
     .estr-fotos-container {
        max-width: 470px;
    }
-
-
 }
 
 @media (max-width:669px) {
@@ -290,6 +312,23 @@ body {
 
 /* RESPONSIVO CALL PARA OS CURSOS */
 
+/* smartphone */
+
+@media(max-width: 414px) {
+    
+    div.call-container {
+        max-width: 250px;
+    }
+
+    section.call-cursos {
+        height: 200px;
+    }
+
+    .call-info p {
+        max-width: 250px;
+    }
+}
+
 @media (max-width: 669px) { 
 
     .call-container {
@@ -360,6 +399,28 @@ img.insta {
 
 /* RESPONSIVO CONTATO */
 
+/* smartphone */
+
+@media(max-width: 414px) {
+    section.contato {
+        max-width: 200px;
+    }
+    
+    div.contato-info {
+        width: 200px;
+    }
+  
+    .contato-info p {
+        width: 150px;
+        font-size: 1em;
+        display: inline-block;
+    }
+ 
+    .contato-info img {
+        width: 40px;
+    }
+}
+
 @media (min-width: 821px) and (max-width: 970px) {
     .contato {
         max-width: 470px;
@@ -380,7 +441,6 @@ img.insta {
         width: 470px;
     }
 
-
 }
 
 @media (max-width:669px) {
@@ -393,7 +453,6 @@ img.insta {
     }
 
 }
-
 
 /* FOOTER */
 
@@ -409,6 +468,7 @@ img.insta {
 .footer-container p {
     padding: 10px 0;
     font-size: 12px;
+    text-align: center;
 }
 
 .footer-container p a {
@@ -422,6 +482,19 @@ img.insta {
 }
 
 /* RESPONSIVO FOOTER */
+
+/* smartphones */
+
+@media (max-width: 414px) {
+
+    div.footer-container{
+        max-width: 200px;
+    }
+    .footer-container p {
+        max-width: 200px;
+        text-align: center;
+    }
+}
 
 @media (min-width: 821px) and (max-width: 970px) {
     .footer-container {

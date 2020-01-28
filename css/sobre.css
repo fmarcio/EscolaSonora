@@ -100,7 +100,7 @@ body {
 /* SOBRE E APRESENTAÇÃO */
 
 .sobre {
-    background: url(../img/sobre-bg.jpg) no-repeat center;
+    background: url(../img/sobre-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -181,6 +181,29 @@ body {
 
 /* RESPONSIVO SOBRE E APRESENTAÇÃO */
 
+/* smartphones */
+
+@media (max-width: 414px) {
+    .apresentacao-texto h2 {
+        font-size: 1.3em;
+        max-width: 280px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .apresentacao-texto p {
+        max-width: 250px;
+    }
+    
+    div.fotos-container {
+        max-width: 280px;
+    }
+
+    .fotos-sonora img {
+        max-width: 250px;
+    }
+}
+
 @media (min-width: 670px) and (max-width: 980px) {
     .fotos-container {
         max-width: 500px;
@@ -260,6 +283,18 @@ body {
 
 /* RESPONSIVO CALL PARA OS CURSOS */
 
+/* smartphones */
+
+@media (max-width: 414px) {
+    .call-cursos {
+        background: #15161c;
+    }
+
+    .call-info p {
+        font-size: 1em;
+    }
+}
+
 @media (max-width: 669px) { 
 
     .btn-cursos {
@@ -318,6 +353,29 @@ img.insta {
 
 /* RESPONSIVO CONTATO */
 
+/* smartphones */
+
+@media (max-width: 414px) {
+
+    section.contato {
+        max-width: 200px;
+    }
+    
+    div.contato-info {
+        width: 200px;
+    }
+  
+    .contato-info p {
+        width: 150px;
+        font-size: 1em;
+        display: inline-block;
+    }
+ 
+    .contato-info img {
+        width: 40px;
+    }
+}
+
 @media (min-width: 670px) and (max-width: 980px) {
     .contato {
         max-width: 700px;
@@ -353,6 +411,7 @@ img.insta {
 .footer-container p {
     padding: 10px 0;
     font-size: 12px;
+    text-align: center;
 }
 
 .footer-container p a {
@@ -366,6 +425,19 @@ img.insta {
 }
 
 /* RESPONSIVO FOOTER */
+
+/* smartphones */
+
+@media (max-width: 414px) {
+
+    div.footer-container{
+        max-width: 200px;
+    }
+    .footer-container p {
+        max-width: 200px;
+        text-align: center;
+    }
+}
 
 @media (min-width: 670px) and (max-width: 980px) {
     .footer-container {

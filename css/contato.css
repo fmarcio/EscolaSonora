@@ -7,6 +7,9 @@ body, h1, h2, h3, p, ul {
 
 body {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 * {
@@ -130,6 +133,10 @@ body {
 
 /* CONTATO INFO */
 
+main {
+    padding-bottom: 40px;
+}
+
 .contato-info-container {
     max-width: 960px;
     margin: 0 auto;
@@ -178,6 +185,27 @@ body {
 
 /* CONTATO INFO RESPONSIVO */
 
+/* smartphone */
+
+@media (max-width:414px) {
+    
+    div.contato-info-container {
+        max-width: 250px;
+    }
+
+    .contato-info {
+        max-width: 250px;
+    }
+
+    .contato-info h2 {  
+        font-size: 1.5em;
+    }
+
+    .contato-info img {
+        width: 40px;
+    }
+}
+
 @media (min-width: 822px) and (max-width: 970px) {
     .contato-info-container {
         max-width: 750px;
@@ -208,7 +236,7 @@ body {
 .call-cursos {
     background: #15161c;
     height: 128px;
-    margin-top: 40px;
+    margin-top: auto;
 }
 
 .call-container {
@@ -246,6 +274,14 @@ body {
 
 /* RESPONSIVO CALL PARA OS CURSOS */
 
+/* smartphone */
+
+@media (max-width: 414px) {
+    .call-info p {
+        font-size: .9em;
+    }
+}
+
 @media (max-width: 669px) { 
 
     .call-container {
@@ -280,6 +316,7 @@ body {
 .footer-container p {
     padding: 10px 0;
     font-size: 12px;
+    text-align: center;
 }
 
 .footer-container p a {
@@ -293,6 +330,18 @@ body {
 }
 
 /* RESPONSIVO FOOTER */
+
+/*smartphone*/
+
+@media (max-width: 414px) {
+    div.footer-container{
+        max-width: 200px;
+    }
+    .footer-container p {
+        max-width: 200px;
+        text-align: center;
+    }
+}
 
 @media (min-width: 821px) and (max-width: 970px) {
     .footer-container {
@@ -325,3 +374,4 @@ body {
         line-height: 20px;
     }
 }
+

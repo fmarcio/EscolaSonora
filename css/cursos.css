@@ -209,6 +209,28 @@ body {
 
 /* RESPONSIVO CURSOS */
 
+/* smartphones */
+
+@media (max-width: 414px) {
+
+    div.cursos-conteudo-container {
+        max-width: 250px;
+    }
+
+    div.guitarra-curso img, div.canto-curso img, div.piano-curso img {
+        max-width: 250px;
+    }
+
+    div.guitarra-curso-texto, div.canto-curso-texto, div.piano-curso-texto  {
+        max-width: 250px;
+    }
+
+    div.guitarra-curso-texto h3, div.canto-curso-texto h3, div.piano-curso-texto h3 {
+        font-size: 1.8em;
+    }
+
+}
+
 @media (min-width: 821px) and (max-width: 970px) {
     .cursos-conteudo-container {
         max-width: 470px;
@@ -339,6 +361,9 @@ form button:hover {
 
 /* RESPONSIVO FORMULÁRIO  */
 
+
+/* smartphones */
+
 @media (max-width:669px) {
 
     .formulario-container {
@@ -405,6 +430,29 @@ img.insta {
 
 /* RESPONSIVO CONTATO */
 
+/* smartphones */
+
+@media (max-width: 414px) {
+
+    section.contato {
+        max-width: 200px;
+    }
+    
+    div.contato-info {
+        width: 200px;
+    }
+  
+    .contato-info p {
+        width: 150px;
+        font-size: 1em;
+        display: inline-block;
+    }
+ 
+    .contato-info img {
+        width: 40px;
+    }
+}
+
 
 @media (min-width: 821px) and (max-width: 970px) {
     .contato {
@@ -454,6 +502,7 @@ img.insta {
 .footer-container p {
     padding: 10px 0;
     font-size: 12px;
+    text-align: center;
 }
 
 .footer-container p a {
@@ -467,6 +516,19 @@ img.insta {
 }
 
 /* RESPONSIVO FOOTER */
+
+/* smartphones */
+
+@media (max-width: 414px) {
+
+    div.footer-container{
+        max-width: 200px;
+    }
+    .footer-container p {
+        max-width: 200px;
+        text-align: center;
+    }
+}
 
 @media (min-width: 821px) and (max-width: 970px) {
     .footer-container {
